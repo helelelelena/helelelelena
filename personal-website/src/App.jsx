@@ -18,7 +18,7 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Initial from './pages/Initial';
+import Initial from './pages/initial';
 import About from './pages/About';
 import Research from './pages/Research';
 import CV from './pages/CV';
