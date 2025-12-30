@@ -11,32 +11,33 @@
 import { useState, useEffect } from 'react';
 import './Initial.css';
 
-function Initial() {
-  const [displayedText, setDisplayedText] = useState('');
-  const fullText = "hi, i'm helena :)";
-  const typingSpeed = 100; // milliseconds per character
+function TypingText({ fullText, speed = 80 }) {
+  const [displayed, setDisplayed] = useState('');
 
   useEffect(() => {
-    let currentIndex = 0;
-    
-    const typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setDisplayedText(fullText.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
+    let index = 0;
+
+    const interval = setInterval(() => {
+      setDisplayed(fullText.slice(0, index + 1));
+      index++;
+
+      if (index >= fullText.length) {
+        clearInterval(interval);
       }
-    }, typingSpeed);
+    }, speed);
 
-    // Cleanup function
-    return () => clearInterval(typingInterval);
-  }, []);
+    return () => clearInterval(interval);
+  }, [fullText, speed]);
 
+  return <span>{displayed}</span>;
+}
+
+function Initial() {
   return (
     <div className="initial-page">
       <div className="content-wrapper">
         <h1 className="hero-title">
-          {displayedText}
+          <TypingText fullText="hi, i'm helena :)" speed={100} />
           <span className="cursor">|</span>
         </h1>
         <p className="hero-extra">(pronounced eˈlenɐ)</p>
