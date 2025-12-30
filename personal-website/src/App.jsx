@@ -69,7 +69,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/helelelelena">
       {/* 
         Layout wraps all pages and receives theme props
         This allows Header to show the theme toggle button
