@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Base path for GitHub Pages deployment
-  // For username.github.io, use '/' as the base
-  // This ensures all assets load correctly from the root domain
-  base: '/',
+  // For project sites (repo-name.github.io/project), use '/project/' as the base
+  base: '/helelelelena/',
 })
