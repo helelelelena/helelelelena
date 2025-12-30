@@ -12,7 +12,7 @@ import './CV.css';
 
 function CV() {
   // Path to your resume PDF in the public folder
-  const cvPdfPath = '/HSB_AResume.pdf';
+  const cvPdfPath = `${import.meta.env.BASE_URL}HSB_AResume.pdf`;
 
   return (
     <div className="cv-page">

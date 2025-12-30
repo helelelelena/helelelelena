@@ -10,46 +10,47 @@ import './Photos.css';
 
 function Photos() {
   // Brown University photos
+  const baseUrl = import.meta.env.BASE_URL;
   const brownPhotos = [
     {
       id: 1,
-      src: '/brown_quad.jpeg',
+      src: `${baseUrl}brown_quad.jpeg`,
       alt: 'Brown University Quad',
       caption: 'ruth simmons quad conversations'
     },
     {
       id: 2,
-      src: '/brown_sunny.jpeg',
+      src: `${baseUrl}brown_sunny.jpeg`,
       alt: 'Brown University on a sunny day',
       caption: 'sunny day on college hill'
     },
     {
       id: 3,
-      src: '/brown_watson.jpeg',
+      src: `${baseUrl}brown_watson.jpeg`,
       alt: 'Watson Institute',
       caption: 'watson institute'
     },
     {
       id: 4,
-      src: '/brown_sayles.jpeg',
+      src: `${baseUrl}brown_sayles.jpeg`,
       alt: 'Sayles Hall',
       caption: 'sayles hall'
     },
     {
       id: 5,
-      src: '/brown_ratty.jpeg',
+      src: `${baseUrl}brown_ratty.jpeg`,
       alt: 'The Ratty',
       caption: 'the ratty'
     },
     {
       id: 6,
-      src: '/brown_streets.jpeg',
+      src: `${baseUrl}brown_streets.jpeg`,
       alt: 'Brown streets',
       caption: 'college hill streets'
     },
     {
       id: 7,
-      src: '/brown_mg.jpeg',
+      src: `${baseUrl}brown_mg.jpeg`,
       alt: 'Brown University',
       caption: 'main green'
     }
@@ -59,115 +60,115 @@ function Photos() {
   const travelPhotos = [
     {
       id: 8,
-      src: '/greece.jpeg',
+      src: `${baseUrl}greece.jpeg`,
       alt: 'Greece',
       caption: 'athens, greece'
     },
     {
       id: 9,
-      src: '/iceland_ice.jpeg',
+      src: `${baseUrl}iceland_ice.jpeg`,
       alt: 'Iceland glacier',
       caption: 'ice climbing in iceland'
     },
     {
       id: 10,
-      src: '/iceland_yellow_house.jpeg',
+      src: `${baseUrl}iceland_yellow_house.jpeg`,
       alt: 'Iceland landscape',
       caption: 'iceland countryside'
     },
     {
       id: 11,
-      src: '/edinburgh.jpeg',
+      src: `${baseUrl}edinburgh.jpeg`,
       alt: 'Edinburgh',
       caption: 'edinburgh, scotland'
     },
     {
       id: 12,
-      src: '/prague.jpeg',
+      src: `${baseUrl}prague.jpeg`,
       alt: 'Prague',
       caption: 'prague, czechia'
     },
     {
       id: 13,
-      src: '/vienna.jpeg',
+      src: `${baseUrl}vienna.jpeg`,
       alt: 'Vienna',
       caption: 'vienna, austria'
     },
     {
       id: 14,
-      src: '/salzburg_top.jpeg',
+      src: `${baseUrl}salzburg_top.jpeg`,
       alt: 'Salzburg view',
       caption: 'salzburg, austria'
     },
     {
       id: 15,
-      src: '/heidelberg.jpeg',
+      src: `${baseUrl}heidelberg.jpeg`,
       alt: 'Heidelberg',
       caption: 'heidelberg, germany'
     },
     {
       id: 16,
-      src: '/near_berlin.jpeg',
+      src: `${baseUrl}near_berlin.jpeg`,
       alt: 'Near Berlin',
       caption: 'potsdam, germany'
     },
     {
       id: 17,
-      src: '/zugspitze.jpeg',
+      src: `${baseUrl}zugspitze.jpeg`,
       alt: 'Zugspitze',
       caption: 'zugspitze, germany'
     },
     {
       id: 18,
-      src: '/cambridge.jpeg',
+      src: `${baseUrl}cambridge.jpeg`,
       alt: 'Cambridge',
       caption: 'cambridge, uk'
     },
     {
       id: 19,
-      src: '/venice.jpeg',
+      src: `${baseUrl}venice.jpeg`,
       alt: 'Venice',
       caption: 'venice, italy'
     },
     {
       id: 20,
-      src: '/venice_light.jpeg',
+      src: `${baseUrl}venice_light.jpeg`,
       alt: 'Venice evening',
       caption: 'venice at dusk'
     },
     {
       id: 21,
-      src: '/granada.jpeg',
+      src: `${baseUrl}granada.jpeg`,
       alt: 'Granada',
       caption: 'granada, spain'
     },
     {
       id: 22,
-      src: '/turkey.jpeg',
+      src: `${baseUrl}turkey.jpeg`,
       alt: 'Turkey',
       caption: 'istanbul, turkey'
     },
     {
       id: 23,
-      src: '/kop.jpeg',
+      src: `${baseUrl}kop.jpeg`,
       alt: 'Koppenhagen',
       caption: 'copenhagen, denmark'
     },
     {
       id: 24,
-      src: '/kop_lighting.jpeg',
+      src: `${baseUrl}kop_lighting.jpeg`,
       alt: 'Koppenhagen castle',
       caption: 'copenhagen castle through the trees'
     },
     {
       id: 25,
-      src: '/mercado_central.jpeg',
+      src: `${baseUrl}mercado_central.jpeg`,
       alt: 'Mercado Central',
       caption: 'mercado central, belo horizonte, brazil'
     },
     {
       id: 26,
-      src: '/farm.jpeg',
+      src: `${baseUrl}farm.jpeg`,
       alt: 'Farm',
       caption: 'pedra azul, brazil'
     }

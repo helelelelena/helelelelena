@@ -17,7 +17,7 @@ function About() {
       <section className="hero">
         <div className="hero-content">
           <img 
-            src="/foto_perfil.jpg" 
+            src={`${import.meta.env.BASE_URL}foto_perfil.jpg`}
             alt="Helena (me!) photographing outdoors with a film camera" 
             className="profile-photo"
           />
